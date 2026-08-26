@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Belongs 2021-2026 图文检索</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">
+          <img class="brand-logo" src="assets/belongs-logo.png" alt="Belongs logo" />
+        </div>
+        <div>
+          <h1>Belongs 公众号画册</h1>
+          <p>2021-2026 公众号合集</p>
+        </div>
+      </div>
+      <div class="stats" aria-live="polite">
+        <span id="visibleCount">0</span>
+        <span class="muted">/</span>
+        <span id="totalCount">0</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="检索筛选">
+        <label class="search-wrap">
+          <span>搜索</span>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="输入标题、日期、年份、材质、关键词..." />
+        </label>
+        <label class="page-size-wrap">
+          <span>每页</span>
+          <select id="pageSizeSelect" aria-label="每页显示数量">
+            <option value="20" selected>20 组</option>
+            <option value="25">25 组</option>
+            <option value="30">30 组</option>
+            <option value="35">35 组</option>
+            <option value="40">40 组</option>
+            <option value="45">45 组</option>
+            <option value="50">50 组</option>
+            <option value="55">55 组</option>
+            <option value="60">60 组</option>
+            <option value="65">65 组</option>
+            <option value="70">70 组</option>
+            <option value="75">75 组</option>
+            <option value="80">80 组</option>
+            <option value="85">85 组</option>
+            <option value="90">90 组</option>
+            <option value="95">95 组</option>
+            <option value="100">100 组</option>
+          </select>
+        </label>
+        <div class="year-filter" id="yearFilter" aria-label="年份筛选"></div>
+      </section>
+
+      <section class="summary" id="summaryText">正在加载图文数据...</section>
+
+      <section class="gallery" id="gallery" aria-label="图文列表"></section>
+
+      <nav class="pagination" id="pagination" aria-label="分页" hidden>
+        <button type="button" id="prevPage">上一页</button>
+        <span id="pageInfo">第 1 / 1 页</span>
+        <button type="button" id="nextPage">下一页</button>
+      </nav>
+
+      <section class="empty" id="emptyState" hidden>
+        <h2>没有找到匹配的图文</h2>
+        <p>换一个关键词，或清除年份筛选后再试。</p>
+      </section>
+    </main>
+
+    <dialog class="detail" id="detailDialog">
+      <button class="close-button" id="closeDialog" aria-label="关闭">×</button>
+      <div class="detail-grid">
+        <figure>
+          <img id="detailImage" alt="" />
+          <div class="carousel-controls" id="carouselControls" hidden>
+            <button type="button" id="prevImage" aria-label="上一张">‹</button>
+            <span id="carouselCount">1 / 1</span>
+            <button type="button" id="nextImage" aria-label="下一张">›</button>
+          </div>
+        </figure>
+        <article>
+          <div class="detail-meta" id="detailMeta"></div>
+          <h2 id="detailTitle"></h2>
+          <p class="detail-index" id="detailIndex"></p>
+          <div class="detail-caption" id="detailCaption"></div>
+        </article>
+      </div>
+    </dialog>
+
+    <script src="data/items.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
