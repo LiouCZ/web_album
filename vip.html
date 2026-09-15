@@ -187,6 +187,7 @@
           <textarea id="resultText" rows="12" readonly></textarea>
           <div class="action-row">
             <button class="primary-button" type="button" id="copyButton">复制登记内容</button>
+            <button class="secondary-button" type="button" id="exportButton">导出整页图片</button>
             <button class="secondary-button" type="reset">清空重填</button>
           </div>
           <p class="copy-status" id="copyStatus" aria-live="polite"></p>
@@ -199,6 +200,7 @@
       </footer>
     </main>
 
+    <script src="vendor/html2canvas.min.js"></script>
     <script src="vip.js"></script>
   </body>
 </html>
