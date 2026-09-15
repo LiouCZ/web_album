@@ -104,6 +104,31 @@ p {
   white-space: nowrap;
 }
 
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 0 0 auto;
+}
+
+.top-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  border: 1px solid rgba(244, 241, 234, 0.4);
+  color: var(--header-text);
+  padding: 0 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.top-link:hover,
+.top-link:focus-visible {
+  border-color: var(--header-text);
+  background: rgba(244, 241, 234, 0.12);
+  outline: none;
+}
+
 main {
   width: min(1560px, calc(100% - 36px));
   margin: 28px auto 64px;
@@ -442,6 +467,11 @@ main {
     position: static;
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .top-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .year-filter {

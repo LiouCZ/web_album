@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Belongs B&K VIP 定制意向登记</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="vip.css" />
+  </head>
+  <body>
+    <main class="vip-page">
+      <header class="vip-hero">
+        <a class="back-link" href="index.html">返回画册</a>
+        <p class="brand-title">BELONGS B&amp;K</p>
+        <p class="brand-subtitle">FINE JEWELRY CUSTOM</p>
+        <h1>VIP 定制意向登记</h1>
+        <p class="hero-note">请在选项中直接打勾，填写后复制内容发送给 BELONGS B&amp;K 客服即可。</p>
+      </header>
+
+      <form class="vip-form" id="vipForm">
+        <section class="form-card" aria-labelledby="sectionInfo">
+          <div class="section-title">
+            <span>1</span>
+            <h2 id="sectionInfo">您的信息</h2>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              <span>称呼</span>
+              <input name="称呼" type="text" placeholder="怎么称呼您" autocomplete="name" />
+            </label>
+            <label>
+              <span>微信昵称</span>
+              <input name="微信昵称" type="text" placeholder="您的微信昵称" />
+            </label>
+            <label>
+              <span>微信名 <em>微信号</em></span>
+              <input name="微信号" type="text" placeholder="您的微信号" />
+            </label>
+            <label>
+              <span>手机号 <em>选填</em></span>
+              <input name="手机号" type="tel" placeholder="方便电话联系" autocomplete="tel" />
+            </label>
+          </div>
+
+          <fieldset class="choice-group" data-kind="radio">
+            <legend>您的 VIP 等级 <em>不确定可选最后一项</em></legend>
+            <div class="pills">
+              <label><input type="radio" name="VIP 等级" value="B1" /><span>B1</span></label>
+              <label><input type="radio" name="VIP 等级" value="B2" /><span>B2</span></label>
+              <label><input type="radio" name="VIP 等级" value="B3" /><span>B3</span></label>
+              <label><input type="radio" name="VIP 等级" value="K1" /><span>K1</span></label>
+              <label><input type="radio" name="VIP 等级" value="K2" /><span>K2</span></label>
+              <label><input type="radio" name="VIP 等级" value="K3" /><span>K3</span></label>
+              <label><input type="radio" name="VIP 等级" value="暂不确定" /><span>暂不确定</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="form-card" aria-labelledby="sectionCustom">
+          <div class="section-title">
+            <span>2</span>
+            <h2 id="sectionCustom">想定制什么 <small>可多选</small></h2>
+          </div>
+
+          <fieldset class="choice-group" data-max="2">
+            <legend>配件类 <em>最多选 2 项</em></legend>
+            <div class="pills">
+              <label><input type="checkbox" name="配件类" value="配方金加银吊坠类配件" /><span>配方金加银吊坠类配件</span></label>
+              <label><input type="checkbox" name="配件类" value="配方银吊坠类配件" /><span>配方银吊坠类配件</span></label>
+              <label><input type="checkbox" name="配件类" value="金隔珠" /><span>金隔珠</span></label>
+              <label><input type="checkbox" name="配件类" value="银链" /><span>银链</span></label>
+              <label><input type="checkbox" name="配件类" value="其他" /><span>其他</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="choice-group" data-max="2">
+            <legend>主件类 <em>最多选 2 项</em></legend>
+            <div class="pills">
+              <label><input type="checkbox" name="主件类" value="初心羽" /><span>初心羽</span></label>
+              <label><input type="checkbox" name="主件类" value="马首" /><span>马首</span></label>
+              <label><input type="checkbox" name="主件类" value="S十字" /><span>S十字</span></label>
+              <label><input type="checkbox" name="主件类" value="M十字" /><span>M十字</span></label>
+              <label><input type="checkbox" name="主件类" value="M镂空十字" /><span>M镂空十字</span></label>
+              <label><input type="checkbox" name="主件类" value="L十字" /><span>L十字</span></label>
+              <label><input type="checkbox" name="主件类" value="钥匙" /><span>钥匙</span></label>
+              <label><input type="checkbox" name="主件类" value="羽翼" /><span>羽翼</span></label>
+              <label><input type="checkbox" name="主件类" value="绳牌" /><span>绳牌</span></label>
+              <label><input type="checkbox" name="主件类" value="浮雕绳牌" /><span>浮雕绳牌</span></label>
+              <label><input type="checkbox" name="主件类" value="狗牌" /><span>狗牌</span></label>
+              <label><input type="checkbox" name="主件类" value="合心牌" /><span>合心牌</span></label>
+              <label><input type="checkbox" name="主件类" value="方牌" /><span>方牌</span></label>
+              <label><input type="checkbox" name="主件类" value="平打手镯" /><span>平打手镯</span></label>
+              <label><input type="checkbox" name="主件类" value="莫比乌斯手镯" /><span>莫比乌斯手镯</span></label>
+              <label><input type="checkbox" name="主件类" value="蛇骨链" /><span>蛇骨链</span></label>
+              <label><input type="checkbox" name="主件类" value="符节戒指" /><span>符节戒指</span></label>
+              <label><input type="checkbox" name="主件类" value="方钻戒指" /><span>方钻戒指</span></label>
+              <label><input type="checkbox" name="主件类" value="雏羽戒指" /><span>雏羽戒指</span></label>
+              <label><input type="checkbox" name="主件类" value="初心羽戒指" /><span>初心羽戒指</span></label>
+              <label><input type="checkbox" name="主件类" value="羽翼戒指" /><span>羽翼戒指</span></label>
+              <label><input type="checkbox" name="主件类" value="平打戒指" /><span>平打戒指</span></label>
+              <label><input type="checkbox" name="主件类" value="其他" /><span>其他</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="choice-group">
+            <legend>其他</legend>
+            <div class="pills">
+              <label><input type="checkbox" name="其他方向" value="古董 remake（K3 专属）" /><span>古董 remake（K3 专属）</span></label>
+              <label><input type="checkbox" name="其他方向" value="还没想好，想先沟通了解" /><span>还没想好，想先沟通了解</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="form-card" aria-labelledby="sectionTheme">
+          <div class="section-title">
+            <span>3</span>
+            <h2 id="sectionTheme">感兴趣的主题元素 <small>最多选 3 项</small></h2>
+          </div>
+
+          <fieldset class="choice-group" data-max="3">
+            <legend class="sr-only">主题元素</legend>
+            <div class="pills">
+              <label><input type="checkbox" name="主题元素" value="蛇骨" /><span>蛇骨</span></label>
+              <label><input type="checkbox" name="主题元素" value="葡萄叶" /><span>葡萄叶</span></label>
+              <label><input type="checkbox" name="主题元素" value="麦穗" /><span>麦穗</span></label>
+              <label><input type="checkbox" name="主题元素" value="生肖" /><span>生肖</span></label>
+              <label><input type="checkbox" name="主题元素" value="羽翼" /><span>羽翼</span></label>
+              <label><input type="checkbox" name="主题元素" value="鹰" /><span>鹰</span></label>
+              <label><input type="checkbox" name="主题元素" value="莨苕" /><span>莨苕</span></label>
+              <label><input type="checkbox" name="主题元素" value="马" /><span>马</span></label>
+              <label><input type="checkbox" name="主题元素" value="蛇" /><span>蛇</span></label>
+              <label><input type="checkbox" name="主题元素" value="唐草" /><span>唐草</span></label>
+              <label><input type="checkbox" name="主题元素" value="光" /><span>光</span></label>
+              <label><input type="checkbox" name="主题元素" value="十字" /><span>十字</span></label>
+              <label><input type="checkbox" name="主题元素" value="符节" /><span>符节</span></label>
+              <label><input type="checkbox" name="主题元素" value="沙漏" /><span>沙漏</span></label>
+              <label><input type="checkbox" name="主题元素" value="其他" /><span>其他</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="form-card" aria-labelledby="sectionBudget">
+          <div class="section-title">
+            <span>4</span>
+            <h2 id="sectionBudget">预算区间</h2>
+          </div>
+
+          <fieldset class="choice-group" data-kind="radio">
+            <legend class="sr-only">预算区间</legend>
+            <div class="pills">
+              <label><input type="radio" name="预算区间" value="1 万以内" /><span>1 万以内</span></label>
+              <label><input type="radio" name="预算区间" value="1-3 万" /><span>1-3 万</span></label>
+              <label><input type="radio" name="预算区间" value="3-5 万" /><span>3-5 万</span></label>
+              <label><input type="radio" name="预算区间" value="5 万以上" /><span>5 万以上</span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="form-card" aria-labelledby="sectionIdea">
+          <div class="section-title">
+            <span>5</span>
+            <h2 id="sectionIdea">您的具体想法</h2>
+          </div>
+
+          <label class="textarea-field">
+            <span>款式描述 <em>想做什么、送给谁、有无参考图、纪念意义等</em></span>
+            <textarea name="款式描述" rows="5" placeholder="例如：想做一条蛇骨链吊坠，送给自己的生日礼物……"></textarea>
+          </label>
+
+          <label class="textarea-field">
+            <span>其他备注 <em>选填</em></span>
+            <textarea name="其他备注" rows="4" placeholder="其他想告诉我们的"></textarea>
+          </label>
+        </section>
+
+        <aside class="notice" role="note">
+          <strong>请在上方选项中直接打勾</strong>
+          <p>配件类、主件类各限 2 项，主题元素限 3 项；选“其他”请在下方想法栏注明。</p>
+        </aside>
+
+        <section class="form-card output-card" aria-labelledby="sectionOutput">
+          <div class="section-title">
+            <span>6</span>
+            <h2 id="sectionOutput">登记内容</h2>
+          </div>
+          <textarea id="resultText" rows="12" readonly></textarea>
+          <div class="action-row">
+            <button class="primary-button" type="button" id="copyButton">复制登记内容</button>
+            <button class="secondary-button" type="reset">清空重填</button>
+          </div>
+          <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+        </section>
+      </form>
+
+      <footer class="vip-footer">
+        <p>BELONGS B&amp;K · VIP 定制权益评级累计解锁</p>
+        <p>定制以品牌自有品类及元素为准，具体方案以官方沟通确认为准</p>
+      </footer>
+    </main>
+
+    <script src="vip.js"></script>
+  </body>
+</html>
