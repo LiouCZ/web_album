@@ -431,6 +431,13 @@ body.is-exporting .export-textarea-snapshot {
   }
 }
 
+@media (min-width: 761px) {
+  .vip-page {
+    width: min(1060px, calc((100% - 34px) / 0.65));
+    zoom: 0.65;
+  }
+}
+
 @media (max-width: 760px) {
   .vip-page {
     width: min(100% - 24px, 1060px);

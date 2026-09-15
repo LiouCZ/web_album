@@ -32,11 +32,25 @@ async function run() {
     executablePath: process.env.CHROME_EXECUTABLE || defaultChromePath,
   });
   try {
+    await assertDesktopLayoutScalesTo65Percent(browser);
     await assertExportUsesReadableTextareaSnapshots(browser);
     await assertRealPngDownloads(browser);
   } finally {
     await browser.close();
   }
+}
+
+async function assertDesktopLayoutScalesTo65Percent(browser) {
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1200 }, deviceScaleFactor: 1 });
+  await page.goto(pageUrl);
+
+  const formWidth = await page.locator(".vip-form").evaluate((element) => element.getBoundingClientRect().width);
+  assert.ok(
+    formWidth >= 680 && formWidth <= 700,
+    `desktop form should render at about 65% of the original 1060px width, got ${formWidth}px`,
+  );
+
+  await page.close();
 }
 
 async function fillVipForm(page) {
