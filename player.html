@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Belongs 2021-2026 图文检索</title>
+    <title>Belongs 玩家分享画册</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -14,14 +14,14 @@
           <img class="brand-logo" src="assets/belongs-logo.png" alt="Belongs logo" />
         </div>
         <div>
-          <h1>Belongs 公众号画册</h1>
-          <p>2021-2026 公众号合集</p>
+          <h1>Belongs 玩家分享画册</h1>
+          <p>玩家分享合集</p>
         </div>
       </div>
       <div class="top-actions">
         <nav class="site-nav" aria-label="画册切换">
-          <a class="top-link is-active" href="index.html">官方画册</a>
-          <a class="top-link" href="player.html">玩家分享</a>
+          <a class="top-link" href="index.html">官方画册</a>
+          <a class="top-link is-active" href="player.html">玩家分享</a>
         </nav>
         <a class="top-link" href="vip.html">VIP 定制登记</a>
         <div class="stats" aria-live="polite">
@@ -36,7 +36,7 @@
       <section class="controls" aria-label="检索筛选">
         <label class="search-wrap">
           <span>搜索</span>
-          <input id="searchInput" type="search" autocomplete="off" placeholder="输入标题、日期、年份、材质、关键词..." />
+          <input id="searchInput" type="search" autocomplete="off" placeholder="输入标题、日期、年份、玩家昵称、关键词..." />
         </label>
         <label class="page-size-wrap">
           <span>每页</span>
@@ -63,9 +63,9 @@
         <div class="year-filter" id="yearFilter" aria-label="年份筛选"></div>
       </section>
 
-      <section class="summary" id="summaryText">正在加载图文数据...</section>
+      <section class="summary" id="summaryText">正在加载玩家分享数据...</section>
 
-      <section class="gallery" id="gallery" aria-label="图文列表"></section>
+      <section class="gallery" id="gallery" aria-label="玩家分享图文列表"></section>
 
       <nav class="pagination" id="pagination" aria-label="分页" hidden>
         <button type="button" id="prevPage">上一页</button>
@@ -74,8 +74,8 @@
       </nav>
 
       <section class="empty" id="emptyState" hidden>
-        <h2>没有找到匹配的图文</h2>
-        <p>换一个关键词，或清除年份筛选后再试。</p>
+        <h2>暂无玩家分享图文</h2>
+        <p>后续把玩家分享图片和说明整理到数据文件后，这里会自动支持搜索、筛选和查看大图。</p>
       </section>
     </main>
 
@@ -99,7 +99,7 @@
       </div>
     </dialog>
 
-    <script src="data/items.js"></script>
+    <script src="data/player-items.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

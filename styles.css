@@ -111,6 +111,12 @@ p {
   flex: 0 0 auto;
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .top-link {
   display: inline-flex;
   align-items: center;
@@ -127,6 +133,11 @@ p {
   border-color: var(--header-text);
   background: rgba(244, 241, 234, 0.12);
   outline: none;
+}
+
+.top-link.is-active {
+  border-color: var(--header-text);
+  background: rgba(244, 241, 234, 0.16);
 }
 
 main {
@@ -471,7 +482,12 @@ main {
 
   .top-actions {
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
   }
 
   .year-filter {
