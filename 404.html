@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      var legacyPrefix = '/web_album/';
+      var targetPrefix = '/belongs_album/';
+      var pathname = window.location.pathname;
+      var targetPath = pathname.indexOf(legacyPrefix) === 0
+        ? targetPrefix + pathname.slice(legacyPrefix.length)
+        : targetPrefix;
+      var target = new URL(targetPath, window.location.origin);
+      target.search = window.location.search;
+      target.hash = window.location.hash;
+      window.location.replace(target.href);
+    }());
+  </script>
+</head>
+<body>
+  <p>正在跳转到新版画册……</p>
+  <p><a href="https://lioucz.github.io/belongs_album/">点击进入 Belongs 公众号画册</a></p>
+</body>
+</html>
